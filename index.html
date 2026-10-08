@@ -174,13 +174,13 @@
     <script>
         // 最新行程資料 (11/13 - 11/24)
         const defaultItinerary = [
-            { date: "11/13 (三) 啟程日", details: [
+            { date: "11/13 (五) 啟程日", details: [
                 { time: "14:10", place: "抵達名古屋", trans: "香港出發、機場辦交通票券", map: "https://maps.google.com/?q=Chubu+Centrair+International+Airport" },
                 { time: "下午", place: "直接長途轉場前往高山", trans: "長途巴士", map: "" },
-                { time: "傍晚", place: "高山 Koko Hotel check-in", trans: "放下行李", map: "https://maps.google.com/?q=Koko+Hotel+Takayama" },
+                { time: "傍晚", place: "高山 Koko Hotel check-in", trans: "放下行李", map: "https://maps.app.goo.gl/cWvHwQNQcdauRqzv9" },
                 { time: "晚上", place: "簡便晚餐休息 (Izakaya Binchō Kittchō-ya)", trans: "步行", map: "https://maps.google.com/?q=Izakaya+Bincho+Kitchoya+Takayama" }
             ]},
-            { date: "11/14 (四) 童話秘境", details: [
+            { date: "11/14 (六) 童話秘境", details: [
                 { time: "07:00", place: "宮川朝市、高山老街", trans: "步行", map: "https://maps.google.com/?q=Miyagawa+Morning+Market" },
                 { time: "午餐", place: "天婦羅蕎麥麵 (Hida)", trans: "步行", map: "https://maps.app.goo.gl/5mmAYt5uEHbZEUGC6" },
                 { time: "12:10", place: "巴士前往白川鄉散策", trans: "濃飛巴士", map: "https://maps.google.com/?q=Shirakawa-go" },
@@ -188,22 +188,23 @@
                 { time: "晚上", place: "名古屋大須觀音民宿入宿", trans: "2-chōme-18-55 Ōsu", map: "https://maps.app.goo.gl/vkz4mq3pkeM1ba6i9" },
                 { time: "晚餐", place: "燒肉 (Dynamite) 晚餐", trans: "步行", map: "https://maps.google.com/?q=Yakiniku+Dynamite+Nagoya" }
             ]},
-            { date: "11/15 (五) 榮商圈", details: [
+            { date: "11/15 (日) 榮商圈", details: [
                 { time: "早餐", place: "まるは食堂 柳橋はなれ", trans: "步行/地鐵", map: "https://maps.app.goo.gl/6svRK72qjk8khYQ96" },
                 { time: "上午", place: "逛 PARCO 商場", trans: "步行", map: "https://maps.google.com/?q=Nagoya+PARCO" },
                 { time: "午餐", place: "平價燒肉、冷麵 (Yakiniku Jiro Nishiki)", trans: "步行", map: "https://maps.google.com/?q=Yakiniku+Jiro+Nishiki" },
+                { time: "下午", place: "剪髮@High street hair", trans: "地鐵", map: "https://maps.app.goo.gl/aYT13WaK1t7M7dRa6" },
                 { time: "下午茶", place: "德兵衛迴轉壽司 (OASIS 21)", trans: "步行", map: "https://maps.google.com/?q=NIGIRI+NO+TOKUBE+OASIS+21" },
                 { time: "晚餐", place: "平價鰻魚飯 (Unagi Unayasu Nishiki)", trans: "步行", map: "https://maps.google.com/?q=Unagi+Unayasu+Nishiki" },
                 { time: "晚上", place: "名古屋女女 show (NAGOYA de SHOW!)", trans: "步行/地鐵", map: "https://maps.google.com/?q=NAGOYA+de+SHOW" }
             ]},
-            { date: "11/16 (六) 大須與魚市場", details: [
+            { date: "11/16 (一) 大須與魚市場", details: [
                 { time: "早上", place: "柳橋中央魚市場", trans: "地鐵/步行", map: "https://maps.google.com/?q=Yanagibashi+Central+Market" },
                 { time: "早餐", place: "紅豆吐司 (Coffee House Kako)", trans: "步行", map: "https://maps.google.com/?q=Coffee+House+Kako" },
                 { time: "上午", place: "大須古著、動漫與商店街", trans: "步行", map: "https://maps.google.com/?q=Osu+Shopping+Street" },
                 { time: "午餐", place: "EGORAPIN'", trans: "步行", map: "https://maps.google.com/?q=EGORAPIN" },
                 { time: "傍晚", place: "名古屋名物雞翼 (Tebasaki Musume Osu)", trans: "步行", map: "https://maps.google.com/?q=Tebasaki+Musume+Osu" }
             ]},
-            { date: "11/17 (日) 雙城轉移", details: [
+            { date: "11/17 (二) 雙城轉移", details: [
                 { time: "早上", place: "大須觀音民宿 checkout", trans: "整理行李", map: "" },
                 { time: "午餐", place: "獅子丸拉麵(Shishimaru)", trans: "步行/地鐵", map: "https://maps.google.com/?q=Shishimaru+Nagoya" },
                  { time: "午餐", place: "甜品(日々の果物)", trans: "步行/地鐵", map: "https://maps.app.goo.gl/hAS7yqNDFZLeo37f9" },
@@ -212,49 +213,49 @@
                 { time: "傍晚", place: "錦市場附近民宿 check-in", trans: "步行", map: "https://maps.app.goo.gl/T53B7V34iE6Sp9ym8" },
                 { time: "晚上", place: "食 I'm donut 2號店, 行 sou sou", trans: "步行", map: "https://maps.app.goo.gl/sbbB2JvqpqjtnUr97" }
             ]},
-            { date: "11/18 (一) 嵐山紅葉", details: [
-                { time: "早餐", place: "Shishimaru", trans: "步行", map: "" },
+            { date: "11/18 (三) 嵐山紅葉", details: [
+                { time: "早餐", place: "待定", trans: "步行", map: "" },
                 { time: "早上", place: "嵐山小火車亀岡駅", trans: "小火車", map: "https://maps.app.goo.gl/BpUMTsyDSVXwvDwG7" },
                 { time: "上午", place: "天龍寺 & 嵐山 祐斎亭賞紅葉", trans: "步行", map: "https://maps.google.com/?q=Arashiyama+Yusai-tei" },
                 { time: "下午", place: "竹林散策與渡月橋", trans: "步行", map: "https://maps.google.com/?q=Togetsukyo+Bridge" },
                 { time: "傍晚", place: "嵐山大街", trans: "步行", map: "" },
                 { time: "晚上", place: "返回京都市區晚餐", trans: "地鐵/巴士", map: "" }
             ]},
-            { date: "11/19 (二) 古都和服", details: [
+            { date: "11/19 (四) 古都和服", details: [
                 { time: "06:30", place: "預約穿和服 (Ichigo Kimono Studio 一期和服)", trans: "步行/的士", map: "https://maps.google.com/?q=Ichigo+Kimono+Studio" },
                 { time: "早上", place: "清水寺", trans: "巴士/的士", map: "https://maps.google.com/?q=Kiyomizu-dera" },
                 { time: "12:00", place: "北野天滿宮與攝影師會合", trans: "的士", map: "https://maps.google.com/?q=Kitano+Tenmangu" },
                 { time: "13:00", place: "金閣寺 lunch & 賞紅葉", trans: "步行/的士", map: "https://maps.google.com/?q=Kinkaku-ji" },
                 { time: "晚上", place: "返回市區還和服及晚餐", trans: "巴士/的士", map: "" }
             ]},
-            { date: "11/20 (三) 前往大阪", details: [
-                { time: "早上", place: "享用京都日式早餐", trans: "步行", map: "" },
-                { time: "上午", place: "京都民宿 checkout", trans: "整理行李", map: "" },
+            { date: "11/20 (五) 前往大阪", details: [
+                { time: "08:00", place: "享用京都日式早餐 Shunsai Imari", trans: "步行", map: "https://maps.app.goo.gl/ccXHeKYcr8CqVbxS8" },
+                { time: "10:00", place: "京都民宿 checkout", trans: "整理行李", map: "" },
                 { time: "中午", place: "轉移至大阪大國町民宿", trans: "鐵路轉地鐵", map: "https://maps.app.goo.gl/MAkf37iuwTvUX7kt6" },
                 { time: "下午", place: "壽司郎", trans: "步行", map: "https://maps.app.goo.gl/8PEFPqfVWMBiMmCN9" },
                 { time: "晚上", place: "心齋橋、難波、日本橋", trans: "步行", map: "" }
             ]},
-            { date: "11/21 (四) 大阪市集", details: [
+            { date: "11/21 (六) 大阪市集", details: [
                 { time: "06:00", place: "木津市場早餐", trans: "步行/地鐵", map: "https://maps.google.com/?q=Kizu+Market" },
                 { time: "上午", place: "天王寺古董市集", trans: "地鐵", map: "https://maps.google.com/?q=Shitennoji+Temple" },
                 { time: "12:45", place: "抵達梅田 (午餐平價壽喜燒しゃぶ禅 梅田店)", trans: "地鐵", map: "https://maps.google.com/?q=Shabuzen+Umeda" },
                 { time: "晚上", place: "天滿行街及晚餐", trans: "地鐵", map: "https://maps.google.com/?q=Temma+Station" }
             ]},
-            { date: "11/22 (五) 血拼購物", details: [
+            { date: "11/22 (日) 血拼購物", details: [
                 { time: "上午", place: "乘穿梭巴士前往門真 Outlet", trans: "穿梭巴士", map: "https://maps.google.com/?q=Mitsui+Outlet+Park+Osaka+Kadoma" },
                 { time: "下午", place: "門真 Outlet & Costco 購物", trans: "步行", map: "https://maps.google.com/?q=Costco+Kadoma" },
                 { time: "晚上", place: "巴士返回大阪晚餐", trans: "穿梭巴士", map: "" }
             ]},
-            { date: "11/23 (六) 彈性待定", details: [
+            { date: "11/23 (一) 彈性待定", details: [
                 { time: "全日", place: "行程待定", trans: "休息", map: "" },
                 { time: "彈性", place: "大阪市區慢遊", trans: "步行/地鐵", map: "" },
                 { time: "晚上", place: "補買手信及整理行李", trans: "步行", map: "" }
             ]},
-            { date: "11/24 (日) 海鮮返程", details: [
+            { date: "11/24 (二) 海鮮返程", details: [
                 { time: "早上", place: "大阪民宿 checkout", trans: "整理行李", map: "" },
                 { time: "上午", place: "前往泉佐野青空市場", trans: "鐵路", map: "https://maps.google.com/?q=Izumisano+Aozora+Market" },
                 { time: "中午", place: "購買海鮮及即場燒烤", trans: "步行", map: "" },
-                { time: "15:00", place: "預留時間前往機場", trans: "鐵路/接駁", map: "https://maps.google.com/?q=Kansai+International+Airport" }
+                { time: "15:00", place: "預留時間前往機場(18:00機)", trans: "鐵路/接駁", map: "https://maps.google.com/?q=Kansai+International+Airport" }
             ]}
         ];
 
